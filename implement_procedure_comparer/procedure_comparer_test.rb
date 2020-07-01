@@ -31,7 +31,6 @@ class ProcedureComparerTest < Minitest::Test
   end
 
   def test_changing_output_with_block
-    skip
     proc1 = Proc.new { 1 }
     proc2 = proc { 2 }
     comparer = ProcedureComparer.new(proc1, proc2)
